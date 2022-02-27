@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SearchController">
+   <children>
+      <Button fx:id="quit_button" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="99.0" text="Quit" />
+      <Button fx:id="go_back_home_button" layoutX="159.0" layoutY="15.0" mnemonicParsing="false" onAction="#processEvent" text="Go Back Home" />
+      <ListView fx:id="photos_listview" layoutX="14.0" layoutY="59.0" prefHeight="519.0" prefWidth="389.0" />
+      <Button fx:id="create_album_button" layoutX="107.0" layoutY="637.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="237.0" text="Create Album Based on Search Result" />
+      <Text layoutX="503.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search/Filter Photos">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="from_textfield" layoutX="492.0" layoutY="57.0" promptText="From (ex: 2021-09-06)" />
+      <TextField fx:id="to_textfield" layoutX="492.0" layoutY="90.0" promptText="To" />
+      <Button fx:id="search_by_date_button" layoutX="522.0" layoutY="126.0" mnemonicParsing="false" onAction="#processEvent" text="Search By Date" />
+      <ComboBox fx:id="tag_name1_combobox" layoutX="457.0" layoutY="187.0" prefHeight="26.0" prefWidth="113.0" promptText="Tag name" />
+      <TextField fx:id="tag_value1_textfield" layoutX="573.0" layoutY="187.0" prefHeight="26.0" prefWidth="113.0" promptText="value" />
+      <ComboBox fx:id="tag_name2_combobox" layoutX="457.0" layoutY="256.0" prefHeight="26.0" prefWidth="113.0" promptText="Tag name" />
+      <TextField fx:id="tag_value2_textfield" layoutX="573.0" layoutY="256.0" prefHeight="26.0" prefWidth="113.0" promptText="value" />
+      <ComboBox fx:id="and_or_combobox" layoutX="520.0" layoutY="221.0" prefHeight="26.0" prefWidth="101.0" promptText="AND/OR" />
+      <Button fx:id="search_by_tags_button" layoutX="521.0" layoutY="294.0" mnemonicParsing="false" onAction="#processEvent" text="Search By Tags" />
+      <Button fx:id="clear_button" layoutX="534.0" layoutY="360.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="79.0" text="clear" />
+      <Separator layoutX="474.0" layoutY="167.0" prefWidth="200.0" />
+      <Text layoutX="418.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag 1:" />
+      <Text layoutX="418.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag 2:" />
+      <Text layoutX="459.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="and / or" wrappingWidth="52.283203125" />
+      <TextField fx:id="album_name_textfield" layoutX="197.0" layoutY="591.0" promptText="Album Name" />
+      <Text layoutX="114.0" layoutY="608.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album name" wrappingWidth="84.97741223247397" />
+   </children>
+</AnchorPane>

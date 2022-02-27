@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HomeController">
+   <children>
+      <ListView fx:id="albums_listview" layoutX="14.0" layoutY="59.0" prefHeight="326.0" prefWidth="389.0" />
+      <Text layoutX="169.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album List">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="create_album_textfield" layoutX="432.0" layoutY="59.0" prefHeight="26.0" prefWidth="146.0" />
+      <Button fx:id="create_album_button" layoutX="432.0" layoutY="92.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="146.0" text="Create Album" />
+      <Button fx:id="search_photos_button" layoutX="432.0" layoutY="216.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="146.0" text="Search Photos" />
+      <Button fx:id="open_album_button" layoutX="432.0" layoutY="252.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="146.0" text="Open Album" />
+      <Button fx:id="delete_album_button" layoutX="433.0" layoutY="289.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="146.0" text="Delete Album" />
+      <Button fx:id="log_out_button" layoutX="433.0" layoutY="328.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="146.0" text="Log Out" />
+      <Button fx:id="quit_button" layoutX="433.0" layoutY="367.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="146.0" text="Quit" />
+      <Button fx:id="add_tags_button" layoutX="432.0" layoutY="182.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="146.0" text="Edit Tag Types" />
+      <Button fx:id="rename_button" layoutX="432.0" layoutY="124.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="146.0" text="Rename Album" />
+   </children>
+</AnchorPane>

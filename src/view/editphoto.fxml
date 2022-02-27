@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditPhotoController">
+   <children>
+      <Text layoutX="35.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album Name: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="photo_imageview" fitHeight="190.0" fitWidth="288.0" layoutX="25.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="album_text" layoutX="140.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album #1: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Caption:" />
+      <Button fx:id="album_button" layoutX="189.0" layoutY="576.0" mnemonicParsing="false" onAction="#processEvent" text="Go Back to Album" />
+      <TextField fx:id="caption_textfield" layoutX="14.0" layoutY="610.0" />
+      <Button fx:id="apply_button" layoutX="244.0" layoutY="610.0" mnemonicParsing="false" onAction="#processEvent" text="Apply" />
+      <Text layoutX="451.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tags_tableview" layoutX="338.0" layoutY="48.0" prefHeight="237.0" prefWidth="246.0">
+        <columns>
+            <TableColumn fx:id="button_column" prefWidth="75.0" />
+          <TableColumn fx:id="type_column" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="value_column" prefWidth="75.0" text="Value" />
+        </columns>
+      </TableView>
+      <Button fx:id="add_tag_button" layoutX="431.0" layoutY="366.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="69.0" text="Add Tag" />
+      <TextField fx:id="tag_value_textfield" layoutX="467.0" layoutY="306.0" prefHeight="26.0" prefWidth="88.0" promptText="value" />
+      <Separator layoutX="331.0" layoutY="411.0" prefHeight="4.0" prefWidth="260.0" />
+      <Separator layoutX="316.0" layoutY="36.0" orientation="VERTICAL" prefHeight="598.0" prefWidth="12.0" />
+      <TextField fx:id="to_album_textfield" layoutX="381.0" layoutY="484.0" promptText="To Album ..." />
+      <Button fx:id="copy_photo_button" layoutX="338.0" layoutY="541.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="88.0" text="Copy Photo" />
+      <Button fx:id="move_photo_button" layoutX="497.0" layoutY="541.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="88.0" text="Move Photo" />
+      <Button fx:id="quit_button" layoutX="417.0" layoutY="600.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="96.0" text="Quit" />
+      <Text layoutX="25.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photo Details:" wrappingWidth="260.0" />
+      <Text fx:id="caption_text" layoutX="25.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption:" wrappingWidth="260.0" />
+      <Text fx:id="date_time_text" layoutX="25.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date-Time:" wrappingWidth="260.0" />
+      <Text fx:id="tags_text" layoutX="25.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags:" wrappingWidth="260.0" />
+      <ComboBox fx:id="tag_name_combobox" layoutX="367.0" layoutY="306.0" prefHeight="26.0" prefWidth="96.0" promptText="name" />
+   </children>
+</AnchorPane>

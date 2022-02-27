@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditTagController">
+   <children>
+      <Text layoutX="236.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Tag Type" textAlignment="CENTER" wrappingWidth="114.21630859375">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="name_textfield" layoutX="144.0" layoutY="69.0" />
+      <Text layoutX="207.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Button fx:id="add_button" layoutX="255.0" layoutY="105.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="76.0" text="Add" />
+      <Button fx:id="cancel_button" layoutX="218.0" layoutY="254.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="76.0" text="Cancel" />
+      <Button fx:id="quit_button" layoutX="306.0" layoutY="254.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="76.0" text="Quit" />
+      <ComboBox fx:id="tag_combobox" layoutX="241.0" layoutY="175.0" prefHeight="26.0" prefWidth="104.0" promptText="Tag" />
+      <Text layoutX="224.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Tag Type" textAlignment="CENTER" wrappingWidth="138.21630859375">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="delete_button" layoutX="255.0" layoutY="208.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="76.0" text="Delete" />
+      <ComboBox fx:id="multiplicity_combobox" layoutX="333.0" layoutY="69.0" prefHeight="26.0" prefWidth="114.0" />
+      <Text layoutX="306.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Allow Single or Multiple Values" />
+   </children>
+</AnchorPane>

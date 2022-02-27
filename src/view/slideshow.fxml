@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SlideshowController">
+   <children>
+      <ImageView fx:id="photo_imageview" fitHeight="245.0" fitWidth="359.0" layoutX="121.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="left_button" layoutX="37.0" layoutY="147.0" mnemonicParsing="false" onAction="#processEvent" style="-fx-background-color: transparent;">
+         <graphic>
+            <Polygon fill="#595854" points="-48.5, 36.0, -26.5, 67.0, -26.5, 7.0" stroke="#56544f" strokeType="INSIDE" />
+         </graphic>
+      </Button>
+      <Button fx:id="right_button" layoutX="531.0" layoutY="148.0" mnemonicParsing="false" onAction="#processEvent" style="-fx-background-color: transparent;">
+         <graphic>
+            <Polygon fill="#595854" points="-5.5, 39.0, -26.5, 67.0, -26.5, 10.0" stroke="#56544f" strokeType="INSIDE" />
+         </graphic>
+      </Button>
+      <Text layoutX="131.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption:" wrappingWidth="56.21630859375" />
+      <Text layoutX="131.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags:" wrappingWidth="56.21630859375" />
+      <Text layoutX="131.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" wrappingWidth="56.21630859375" />
+      <Text fx:id="caption_text" layoutX="196.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="whatever" wrappingWidth="268.21630859375" />
+      <Text fx:id="tags_text" layoutX="196.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tagssss" wrappingWidth="268.21630859375" />
+      <Text fx:id="date_text" layoutX="196.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dateeee" wrappingWidth="268.21630859375" />
+      <Text layoutX="237.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album: ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="album_text" layoutX="313.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="quit_button" layoutX="464.0" layoutY="354.0" mnemonicParsing="false" onAction="#processEvent" prefHeight="26.0" prefWidth="114.0" text="Quit" />
+      <Button fx:id="album_button" layoutX="464.0" layoutY="321.0" mnemonicParsing="false" onAction="#processEvent" text="Go back to Album" />
+   </children>
+</AnchorPane>
